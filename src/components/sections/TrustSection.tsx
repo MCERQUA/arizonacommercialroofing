@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 export function TrustSection() {
   return (
-    <section className="py-12 bg-slate-900 border-b border-slate-800">
+    <section className="py-12 bg-slate-900 border-b border-slate-800 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center text-center">
           {[

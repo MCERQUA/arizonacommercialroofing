@@ -8,13 +8,14 @@ export function Hero() {
   return (
     <section className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden bg-slate-900">
       {/* Background Image Placeholder - In production, use a real image or video */}
-      <div 
+      <div
         className="absolute inset-0 z-0 opacity-40 bg-cover bg-center"
-        style={{ 
-            backgroundImage: 'url("https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=2070&auto=format&fit=crop")' 
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=2070&auto=format&fit=crop")'
         }}
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-slate-900/90 to-slate-900/40" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/40" />
+      <div className="absolute inset-0 z-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl">
@@ -47,7 +48,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl"
           >
-            Specializing in TPO, Foam, and Metal roofing systems for Arizona&apos;s harsh climate. 
+            Specializing in TPO, Foam, and Metal roofing systems for Arizona&apos;s harsh climate.
             Get a 20-year warranty and 24/7 emergency support from the valley&apos;s most trusted experts.
           </motion.p>
 
