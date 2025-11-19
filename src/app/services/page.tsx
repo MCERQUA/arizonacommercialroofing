@@ -18,7 +18,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
            <h2 className="text-3xl font-bold mb-6">Not Sure What You Need?</h2>
            <p className="text-slate-300 mb-8 text-lg">
-             Our experts can conduct a comprehensive roof audit to determine the best solution for your building's specific needs and budget.
+             Our experts can conduct a comprehensive roof audit to determine the best solution for your building&apos;s specific needs and budget.
            </p>
            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors">
              Schedule a Free Roof Audit

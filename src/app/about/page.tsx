@@ -6,7 +6,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-slate-50">
       <PageHero 
         title="About Us" 
-        subtitle="Arizona's Premier Commercial Roofing Specialists Since 2005"
+        subtitle="Arizona&apos;s Premier Commercial Roofing Specialists Since 2005"
       />
       
       <section className="py-20">
