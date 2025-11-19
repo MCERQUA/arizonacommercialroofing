@@ -1,7 +1,7 @@
 export const COMPANY_INFO = {
   name: "Arizona Commercial Roofing",
-  phone: "(602) 555-0123",
-  email: "contact@arizonacommercialroofing.com",
+  phone: "844-967-5247",
+  email: "josh@joshcotner.com",
   address: "123 Business Park Dr, Phoenix, AZ 85001",
   license: "ROC #123456",
 };
