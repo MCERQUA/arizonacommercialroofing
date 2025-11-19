@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 
 interface PageHeroProps {
@@ -9,10 +11,10 @@ interface PageHeroProps {
 export function PageHero({ title, subtitle, backgroundImage }: PageHeroProps) {
   return (
     <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden bg-slate-900 mt-16 md:mt-0">
-      <div 
+      <div
         className="absolute inset-0 z-0 opacity-30 bg-cover bg-center"
-        style={{ 
-            backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'linear-gradient(to bottom right, #0f172a, #334155)' 
+        style={{
+          backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'linear-gradient(to bottom right, #0f172a, #334155)'
         }}
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent" />
