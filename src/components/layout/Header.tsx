@@ -16,11 +16,20 @@ export function Header() {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      // Always show background on non-home pages, otherwise respect scroll
+      if (pathname !== "/") {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(window.scrollY > 20);
+      }
     };
+
+    // Initial check
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   return (
     <header
