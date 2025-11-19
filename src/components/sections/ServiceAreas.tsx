@@ -43,7 +43,7 @@ export function ServiceAreas() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-slate-100 rounded-2xl min-h-[400px] flex items-center justify-center border border-slate-200 relative overflow-hidden"
+            className="bg-slate-100 rounded-2xl min-h-[400px] flex items-center justify-center border-2 border-orange-500 relative overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.2)]"
           >
             {/* Google Map Background */}
             <div className="absolute inset-0 opacity-50 grayscale">
@@ -57,14 +57,13 @@ export function ServiceAreas() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-slate-100/30" />
 
-            <div className="text-center p-8 relative z-10">
-              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 text-orange-600 animate-pulse">
+            <div className="text-center p-8 relative z-10 bg-white/80 backdrop-blur-sm rounded-xl border border-orange-200 shadow-lg">
+              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 text-orange-600 animate-pulse shadow-[0_0_20px_rgba(249,115,22,0.4)]">
                 <MapPin size={40} />
               </div>
-              <h3 className="text-xl font-bold text-slate-800">Arizona Wide Coverage</h3>
-              <p className="text-slate-500">Licensed to serve all AZ counties.</p>
+              <h3 className="text-xl font-bold text-slate-900 drop-shadow-sm">Arizona Wide Coverage</h3>
+              <p className="text-slate-700 font-medium">Licensed to serve all AZ counties.</p>
             </div>
           </motion.div>
         </div>
