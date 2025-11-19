@@ -36,16 +36,16 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-md py-2"
+          ? "bg-white/80 backdrop-blur-md shadow-lg border-b border-orange-100/50 py-2"
           : "bg-transparent py-4"
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 z-50">
-            <div className="bg-orange-600 p-2 rounded-lg text-white">
-                <HardHat size={24} />
-            </div>
+          <div className="bg-orange-600 p-2 rounded-lg text-white">
+            <HardHat size={24} />
+          </div>
           <span
             className={cn(
               "text-xl font-bold tracking-tight",
@@ -67,8 +67,8 @@ export function Header() {
                 pathname === item.href
                   ? "text-orange-500"
                   : isScrolled
-                  ? "text-slate-700"
-                  : "text-white/90"
+                    ? "text-slate-700"
+                    : "text-white/90"
               )}
             >
               {item.name}
@@ -78,14 +78,14 @@ export function Header() {
 
         {/* CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
-            <div className={cn("hidden md:flex items-center gap-2 font-semibold", isScrolled ? "text-slate-900" : "text-white")}>
-                <Phone size={18} className="text-orange-500"/>
-                {COMPANY_INFO.phone}
-            </div>
+          <div className={cn("hidden md:flex items-center gap-2 font-semibold", isScrolled ? "text-slate-900" : "text-white")}>
+            <Phone size={18} className="text-orange-500" />
+            {COMPANY_INFO.phone}
+          </div>
           <Button variant="cta" size="sm" className="hidden md:flex">
             Get Free Estimate
           </Button>
-          
+
           <button
             className="md:hidden z-50 p-2 text-slate-900"
             onClick={() => setIsOpen(!isOpen)}
@@ -102,7 +102,7 @@ export function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-0 left-0 right-0 bg-white shadow-xl border-b border-slate-100 p-4 pt-20 md:hidden flex flex-col gap-4"
+            className="absolute top-0 left-0 right-0 bg-white/90 backdrop-blur-xl shadow-2xl border-b border-orange-100 p-4 pt-20 md:hidden flex flex-col gap-4"
           >
             {NAVIGATION.map((item) => (
               <Link
