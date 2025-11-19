@@ -57,7 +57,7 @@ export function ServiceAreas() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-slate-100/60 backdrop-blur-[2px]" />
+            <div className="absolute inset-0 bg-slate-100/30" />
 
             <div className="text-center p-8 relative z-10">
               <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 text-orange-600 animate-pulse">
