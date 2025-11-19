@@ -45,11 +45,19 @@ export function ServiceAreas() {
             viewport={{ once: true }}
             className="bg-slate-100 rounded-2xl min-h-[400px] flex items-center justify-center border border-slate-200 relative overflow-hidden"
           >
-            {/* Abstract Map Representation */}
-            <div className="absolute inset-0 opacity-10" style={{
-              backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)',
-              backgroundSize: '20px 20px'
-            }}></div>
+            {/* Google Map Background */}
+            <div className="absolute inset-0 opacity-50 grayscale">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.858347964754!2d-112.0740372847998!3d33.44837758077452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ!5e0!3m2!1sen!2sus!4v1632759145351!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 bg-slate-100/60 backdrop-blur-[2px]" />
 
             <div className="text-center p-8 relative z-10">
               <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 text-orange-600 animate-pulse">

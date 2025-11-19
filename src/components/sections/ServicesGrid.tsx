@@ -15,6 +15,14 @@ const icons = {
   maintenance: ShieldCheck,
 };
 
+const images = {
+  tpo: "https://images.unsplash.com/photo-1632759145351-1d592919f522?q=80&w=2070&auto=format&fit=crop",
+  foam: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop",
+  metal: "https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?q=80&w=2069&auto=format&fit=crop",
+  coating: "https://images.unsplash.com/photo-1621252179027-94459d27d3ee?q=80&w=2070&auto=format&fit=crop",
+  maintenance: "https://images.unsplash.com/photo-1581094794329-cd8119604f89?q=80&w=2070&auto=format&fit=crop",
+};
+
 export function ServicesGrid() {
   return (
     <section className="py-24 bg-slate-950 relative overflow-hidden">
@@ -49,7 +57,11 @@ export function ServicesGrid() {
                     <div className="absolute inset-0 bg-slate-900">
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent z-10" />
                       {/* Abstract pattern or image would go here */}
-                      <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80')] bg-cover bg-center transition-transform duration-700 group-hover:scale-110" />
+                      {/* Abstract pattern or image would go here */}
+                      <div
+                        className="absolute inset-0 opacity-20 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style={{ backgroundImage: `url('${images[service.id as keyof typeof images] || images.tpo}')` }}
+                      />
                     </div>
 
                     <div className="relative z-20 p-8 h-full flex flex-col justify-end">

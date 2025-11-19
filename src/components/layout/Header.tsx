@@ -36,7 +36,7 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-lg border-b border-orange-100/50 py-2"
+          ? "bg-white/90 backdrop-blur-md shadow-lg border-b border-orange-100/50 py-2"
           : "bg-transparent py-4"
       )}
     >
@@ -49,7 +49,7 @@ export function Header() {
           <span
             className={cn(
               "text-xl font-bold tracking-tight",
-              isScrolled ? "text-slate-900" : "text-slate-900 md:text-white"
+              isScrolled ? "text-slate-900" : "text-white"
             )}
           >
             AZ Commercial Roofing
